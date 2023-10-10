@@ -1,6 +1,8 @@
 @import './pokedex.css';
 @import './cover.css';
 @import './header.css';
+@import './stats.css';
+@import './screen.css';
 
 
 :root { 
