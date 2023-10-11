@@ -1,6 +1,6 @@
-.screen {
+/* .screen {
     
-}
+} */
 
 
 .screen-border {
@@ -34,7 +34,7 @@
     border-radius:50%;
     position: absolute;
     bottom: 14px;
-    right: 170px;
+    right: 180px;
 }
 
 .screen-safeArea {
