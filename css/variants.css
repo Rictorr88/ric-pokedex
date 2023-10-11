@@ -10,6 +10,10 @@
     /* border: 1px solid blue; */
 }
 
+.variants > *:active {
+    transform: scale(.9);
+}
+
 
 .variants button {
     align-self: center;
@@ -26,16 +30,21 @@
     background-color: var(--secondary);
     border: none;
     filter: drop-shadow(.2rem .2rem 0 var(--black));
+    cursor: pointer;
 }
 
 .variants button:nth-child(2) {
     filter: drop-shadow(.1rem .1rem 0 #D2AB33);
     background-color: #FECB2F;
     border: none;
+    cursor: pointer;
+
 }
 
 .variants button:nth-child(3) {
     filter: drop-shadow(.1rem .1rem 0 var(--black));
     background-color: var(--secondary);
     border: none;
+    cursor: pointer;
+
 }
