@@ -4,8 +4,8 @@
     padding: .5rem;
     font-family: monospace;
     color: var(--black);
-    block-size: 7rem;
-    overflow: auto;
+    block-size: 6rem;
+    overflow: hidden;
     border-radius: .5rem;
     border: 2px solid var(--black);
 }

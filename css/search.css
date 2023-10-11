@@ -2,6 +2,8 @@
     grid-area: search;
     display: flex;
     /* border: 5px solid purple; */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .search input {

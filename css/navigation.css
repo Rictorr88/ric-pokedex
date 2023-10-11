@@ -8,6 +8,7 @@
     grid-template-areas: '. up .' 'left center right' '. down .';
     filter: drop-shadow(.2rem .2rem 0 var(--black));
     align-content: stretch;
+    margin-left: 2rem;
 }
 
 .navigation > *, .navigation::after {
