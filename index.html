@@ -37,11 +37,22 @@
         </div>
       </div>
       <div class="actions">
-        <div class="variants">variants</div>
+        <div class="variants">
+          <div class="random-button">
+            <button></button>
+          </div>
+          <button></button>
+          <button></button>
+        </div>
         <form role="search" id="form" class="search">
           <input type="search" name="id" placeholder="¿Quien es ese Pokemon?" autocomplete="off" >
         </form>
-        <div class="navigation">navigation</div>
+        <div class="navigation">
+          <button id="next-pokemon" class="navigation-right" aria-label="Siguiente Pokemon"></button>
+          <button id="prev-pokemon" class="navigation-left" aria-label="Pokemon Anterior"></button>
+          <button id="next-image" class="navigation-down" aria-label="Siguiente Imagen del Pokemon"></button>
+          <button id="prev-image" class="navigation-up" aria-label="Imagen anterior del Pokemon"></button>
+        </div>
         <div class="description">
           <p>Busca a un pokemon para obtener todas sus caracteristicas</p>
         </div>

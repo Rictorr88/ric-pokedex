@@ -1,3 +1,41 @@
 .variants {
     grid-area: variants;
+    display: flex;
+    /* border: 1px solid green; */
+    gap: 2rem;
+    margin: 0;
+}
+
+.random-button {
+    /* border: 1px solid blue; */
+}
+
+
+.variants button {
+    align-self: center;
+    inline-size: 1.875rem;
+    block-size: .5rem;
+    border-radius: .5rem;
+}
+
+
+.variants button:nth-child(1) {
+    border-radius: 50%;
+    inline-size: 3.5rem;
+    block-size: 3.5rem;
+    background-color: var(--secondary);
+    border: none;
+    filter: drop-shadow(.2rem .2rem 0 var(--black));
+}
+
+.variants button:nth-child(2) {
+    filter: drop-shadow(.1rem .1rem 0 #D2AB33);
+    background-color: #FECB2F;
+    border: none;
+}
+
+.variants button:nth-child(3) {
+    filter: drop-shadow(.1rem .1rem 0 var(--black));
+    background-color: var(--secondary);
+    border: none;
 }

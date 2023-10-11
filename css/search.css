@@ -1,6 +1,7 @@
 .search {
     grid-area: search;
     display: flex;
+    /* border: 5px solid purple; */
 }
 
 .search input {
@@ -16,5 +17,5 @@
 
 
 .search input:focus {
-    box-shadow: inset 0 0 0 var(--secondary);
+    box-shadow: inset 0 0 0 1px var(--secondary);
 }
