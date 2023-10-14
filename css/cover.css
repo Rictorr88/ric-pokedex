@@ -21,6 +21,12 @@
     border-end-start-radius: .5rem;
     box-sizing: border-box;
     clip-path: polygon(0 4.75rem, 70% 3.25rem, 100% 3.25rem, 100% 100%, 0 100%);
+
+    background-image: url('../images/pokemon-cover4.png');
+    background-size: 50% auto; 
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 
 .cover-back {
