@@ -1,0 +1,1 @@
+Pokedex creado por Ric
