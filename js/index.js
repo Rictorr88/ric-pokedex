@@ -17,12 +17,24 @@ $random.addEventListener("click", handleRandomPokemon);
 
 let activePokemon = null;
 
+async function validatePokemon(id) {
+  if (id == 0 || id >= 898) {
+    $valueInput.value = "NO EXISTO 'AUN' ";
+    $description.textContent = "no hay informacion";
+  } else {
+    activePokemon = await setPokemon(id);
+  }
+}
+
+
 async function handleSubmit(event) {
-  $pokedex.classList.add("is-open");
-  event.preventDefault();
-  const form = new FormData($form);
-  const id = form.get("id");
-  activePokemon = await setPokemon(id);
+  $pokedex.classList.add("is-open")
+  event.preventDefault()
+  const form = new FormData($form)
+  const id = form.get("id")
+  console.log(id)
+  validatePokemon
+  activePokemon = await setPokemon(id)
 }
 
 async function handleNextPokemon() {
