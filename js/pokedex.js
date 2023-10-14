@@ -17,6 +17,8 @@ const $screen = document.querySelector("#screen");
 function loader(isLoading = false) {
     const img = isLoading ? 'url(./images/loading.gif)': ''
     $screen.style.backgroundImage = img
+    $image.style.width = "130px"
+    $image.style.height = "130px"
 }
 
 const $light= document.querySelector("#light")

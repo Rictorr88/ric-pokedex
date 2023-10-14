@@ -15,7 +15,7 @@ export function createChart(stats) {
       datasets: [
         {
           data: stats,
-          backgroundColor: "white",
+          backgroundColor: "rgba(255, 170, 0, 0.4)",
         },
       ],
     },
@@ -29,13 +29,13 @@ export function createChart(stats) {
       scales: {
         r: {
           grid: {
-            color: "white",
+            color: "gray",
           },
           pointLabels: {
-            color: "white",
+            color: "orange",
           },
           angleLines: {
-            color: "white",
+            color: "gray",
           },
         },
       },
