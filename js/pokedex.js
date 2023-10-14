@@ -21,17 +21,43 @@ function loader(isLoading = false) {
     $image.style.height = "130px"
 }
 
-const $light= document.querySelector("#light")
-function speech(text) {
-  const utterance = new SpeechSynthesisUtterance(text)
-  utterance.lang = 'es'
-  speechSynthesis.speak(utterance)
-  $light.classList.add('is-animated')
+//original
 
-  utterance.addEventListener('end', () => {
-    $light.classList.remove('is-animated')
-  }) 
+// const $light= document.querySelector("#light")
+// function speech(text) {
+//   const utterance = new SpeechSynthesisUtterance(text)
+//   utterance.lang = 'es'
+//   speechSynthesis.speak(utterance)
+//   $light.classList.add('is-animated')
+
+//   utterance.addEventListener('end', () => {
+//     $light.classList.remove('is-animated')
+//   }) 
+// }
+
+// prueba
+const $light = document.querySelector("#light")
+let currentUtterance = null
+
+function speech(text) {
+  // Detén la reproducción de voz actual, si la hay
+  if (currentUtterance) {
+    speechSynthesis.cancel()
+  }
+
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = "es"
+  speechSynthesis.speak(utterance)
+  $light.classList.add("is-animated")
+
+  utterance.addEventListener("end", () => {
+    $light.classList.remove("is-animated")
+  })
+
+  // Guarda la referencia a la nueva reproducción de voz
+  currentUtterance = utterance
 }
+
 
 
 export async function findPokemon(id) {
